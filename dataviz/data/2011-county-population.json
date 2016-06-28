@@ -1,0 +1,110 @@
+[
+    {
+        "variable_name": "Carlow",
+        "total_count": "54612"
+    },
+    {
+        "variable_name": "Dublin",
+        "total_count": "1273069"
+    },
+    {
+        "variable_name": "Kildare",
+        "total_count": "210312"
+    },
+    {
+        "variable_name": "Kilkenny",
+        "total_count": "95419"
+    },
+    {
+        "variable_name": "Laois",
+        "total_count": "80559"
+    },
+    {
+        "variable_name": "Longford",
+        "total_count": "39000"
+    },
+    {
+        "variable_name": "Louth",
+        "total_count": "122897"
+    },
+    {
+        "variable_name": "Meath",
+        "total_count": "184135"
+    },
+    {
+        "variable_name": "Offaly",
+        "total_count": "76687"
+    },
+    {
+        "variable_name": "Westmeath",
+        "total_count": "86164"
+    },
+    {
+        "variable_name": "Wexford",
+        "total_count": "145320"
+    },
+    {
+        "variable_name": "Wicklow",
+        "total_count": "136640"
+    },
+    {
+        "variable_name": "Clare",
+        "total_count": "117196"
+    },
+    {
+        "variable_name": "Cork",
+        "total_count": "519032"
+    },
+    {
+        "variable_name": "Kerry",
+        "total_count": "145502"
+    },
+    {
+        "variable_name": "Limerick",
+        "total_count": "191809"
+    },
+    {
+        "variable_name": "Nth Tipp",
+        "total_count": "70322"
+    },
+    {
+        "variable_name": "Sth Tipp",
+        "total_count": "88432"
+    },
+    {
+        "variable_name": "Waterford",
+        "total_count": "113795"
+    },
+    {
+        "variable_name": "Galway",
+        "total_count": "250653"
+    },
+    {
+        "variable_name": "Leitrim",
+        "total_count": "31798"
+    },
+    {
+        "variable_name": "Mayo",
+        "total_count": "130638"
+    },
+    {
+        "variable_name": "Roscommon",
+        "total_count": "64065"
+    },
+    {
+        "variable_name": "Sligo",
+        "total_count": "65393"
+    },
+    {
+        "variable_name": "Cavan",
+        "total_count": "73183"
+    },
+    {
+        "variable_name": "Donegal",
+        "total_count": "161137"
+    },
+    {
+        "variable_name": "Monaghan",
+        "total_count": "60483"
+    }
+]
