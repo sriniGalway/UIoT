@@ -1,0 +1,5 @@
+{"name":"BlueFlagBeaches","type":"FeatureCollection"
+,"features":[
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-9.128434,53.250792]},"properties":{"ID":"1","NAME":"Silverstrand","BLUEFLAG":"Yes","LAT":"53.2508","LONG":"-9.12843"}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[-9.091258,53.257062]},"properties":{"ID":"2","NAME":"Salthill","BLUEFLAG":"Yes","LAT":"53.2571","LONG":"-9.09126"}}
+]}
