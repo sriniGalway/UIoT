@@ -1,0 +1,35 @@
+{
+    "ortho_phosphate":{
+        "name": "Compliance with Ortho-Phosphate EQS for Galway Rivers, 2013",
+        "data": [
+            ["High", 90.4],
+            ["Good", 7.2],
+            ["Moderate", 1.2],
+            ["Not given", 1.2]
+        ]
+    },
+    "ammonia":{
+        "name": "Compliance with Ammonia EQS for Galway Rivers, 2013",
+        "data": [
+            ["High", 88],
+            ["Good", 4.8],
+            ["Moderate", 6],
+            ["Not given", 1.2]
+        ]
+    },
+    "ton":{
+        "name": "Compliance with TON EQS for Galway Rivers, 2013",
+        "data": [
+            ["High", 65.1],
+            ["Good", 33.7],
+            ["Moderate", 1.2]            
+        ]
+    },
+    "bod":{
+        "name": "Compliance with BOD EQS for Galway Rivers, 2013",
+        "data": [
+            ["High", 97.6],            
+            ["Moderate", 1.2]            
+        ]
+    }
+}
