@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
-    $.get('/data/data-environmental.json', function(dataset){
+    $.get('data/data-environmental.json', function(dataset){
 
 
         $('#ortho-phosphate-eqs-chart').highcharts({
@@ -157,7 +157,7 @@ $(document).ready(function(){
 
     // 
     // EPA River / Lake water quality heatmap
-    d3.csv('/data/epa-water-quality.csv', function(d) {
+    d3.csv('data/epa-water-quality.csv', function(d) {
       return {
         // Type,Name,Identifiers,Remarks,Condition
         type: d.Type,
@@ -219,7 +219,7 @@ $(document).ready(function(){
 
     // 
     // Bathing water quality heatmap
-    d3.csv('/data/bathing-water-quality.csv', function(d) {
+    d3.csv('data/bathing-water-quality.csv', function(d) {
       return {
         // Location, Status
        name: d.location,
@@ -291,7 +291,7 @@ $(document).ready(function(){
         attribution: 'Tiles courtesy of <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a> &mdash; Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
     }).addTo(aa.beachMap);
 
-    $.get('/data/BlueflagBeaches.json', function(data){
+    $.get('data/BlueflagBeaches.json', function(data){
         aa.galwayIsochroneLayer = L.geoJson(data, { 
             pointToLayer: aa.labelBeaches
         });
@@ -299,7 +299,7 @@ $(document).ready(function(){
 
 
 
-    d3.csv('/data/waste-management.csv', function(d) {
+    d3.csv('data/waste-management.csv', function(d) {
       // LocalAuthority,Variable,y2010,y2011,y2012
       return {
         local_authority: d.LocalAuthority,
