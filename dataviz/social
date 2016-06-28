@@ -1,0 +1,553 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en" itemscope itemtype="http://schema.org/Article"> <!--<![endif]-->
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Visualising the Social and Cultural Infrastructure in Galway City and County</title>
+
+    <meta name="author" content="UIoT" />
+    <meta name="copyright" content="Copyright NUI Galway" />
+    <meta name="description" content="" />
+    <meta name="robots" content="index,follow" />
+    
+    <link rel="stylesheet" type="text/css" href="css/style.0.1.0.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!--[if lte IE 8]>
+      <script src="/bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+
+    <script>
+      var aa = {} || aa;
+    </script>
+    
+</head>
+<body class="hfeed">         
+    <!--[if lte IE 8]>
+      <p class="browsehappy">
+        <strong>IMPORTANT</strong>: You are using an <strong>outdated</strong> browser which may not display parts of this website correctly. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience on this website.</p>
+    <![endif]-->
+
+    <input type="hidden" name="_token" value="6df8baq9bzf4hlq3N7b8n6Ga6w8khys1nbtzsCUo">  
+
+
+    <div class="header_container">
+    
+          
+      <header id="header">
+
+
+          <nav class="navbar navbar-default">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navbar-collapsed">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>                
+              </div>
+
+
+              <div class="collapse navbar-collapse" id="header-navbar-collapsed">
+                <ul class="nav navbar-nav">
+                  <li >
+                    <a href="/">Home</a>
+                  </li>
+                  <li>
+                    <li >
+                    <a href="/people">People</a>
+                  </li>  
+                  <li  class="active">                    
+                    <a href="/social">Social</a>
+                  </li>
+                  <li >
+                    <a href="/enterprise">Enterprise</a>
+                  </li>
+                  <li >
+                    <a href="/environment">Environment</a>
+                  </li>                  
+                  
+                </ul>
+                
+                <ul id="social-head" class="nav navbar-nav navbar-right"> 
+                  
+                  <li class="social-link">
+                      <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="dataviz,UIoT">Tweet</a>
+                  </li>
+                 
+                </ul>
+              </div>            
+            </div>        
+          </nav>
+      </header>
+
+    </div>
+
+  
+
+<div class="page">         
+
+
+    <div id="page-container">
+        
+        <div id="main">
+
+                        
+                
+
+<div id="sidr" style="display:none;">
+    <button id="close-sidr" class="btn btn-sm pull-right btn-default" style="margin: 1em;">
+        <i class="glyphicon glyphicon-remove"></i>
+    </button>
+
+    <ul>
+        <li><a href="#deprivation-index">Deprivation Index</a></li>  
+        <li><a href="#city-rental">Housing</a></li>
+        <li><a href="#disability-support">Disability Supports</a></li>  
+        <li><a href="#poverty-rates">Poverty Rates</a></li>  
+        <li><a href="#culture-head">Cultural Infrastructure</a></li>
+        <li><a href="#markets-head">Shopping</a></li>    
+        <li><a href="#commute-map-head">Commuting</a></li>
+    </ul>
+</div>
+
+<article id="social" class="stats">
+    <div class="container">
+            <div class="row">
+                <header id="page-title" class="col-xs-12">
+                    <a id="internal-nav-btn" href="#sidr" class="btn btn-default btn-xs pull-left">
+                        <i class="glyphicon glyphicon-menu-hamburger"></i>
+                        Sections
+                    </a>
+        
+                    <h1>Social &amp; Cultural</h1>
+                    
+                    <p class="help-block">
+                        Visualising the Social and Cultural Infrastructure in Galway City and County
+                    </p> 
+                    <p class="help-block">
+                        <div class="alert alert-info">
+                            <i class="glyphicon glyphicon-info-sign"></i>
+                            Use the interactive charts and maps below to explore key data about this area
+                        </div>
+                    </p>    
+                </header>
+            </div>
+
+    </div>    
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 id="deprivation-index">Deprivation Index</h2>
+                <p class="help-block col-sm-6">
+                    Mapping <strong>Relative</strong> Deprivation index measures at the Electoral Division level, 2011. 
+                </p>
+                <p class="help-block col-sm-6">
+                    <i class="glyphicon glyphicon-info-sign"></i>
+                    Click the interactive map for further measures. 
+                    See the note on relative index scoring for comparison on the <a href="https://www.pobal.ie/Pages/New-Measures.aspx">Pobal website</a>.
+                </p>
+                <div class="clearfix"></div>
+                <ul class="data-operation-list list-inline">                    
+                   <li class="source">
+                        <span class="source-title">Source:</span> 
+                        <a href="https://www.pobal.ie/Pages/New-Measures.aspx">Pobal</a>
+                    </li>     
+                    <li>
+                        <a href="#deprivation-index">
+                            <i class="glyphicon glyphicon-link"></i>
+                            Link
+                        </a>
+                    </li>                                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="deprivation-index-map" class="map"></div>
+
+
+
+    <div class="container">
+        <section class="row">
+            <div class="col-xs-12 col-sm-6">
+                <h2 id="city-rental">City Housing Rental</h2>
+                <p class="help-block">
+                    Average Monthly Rents
+                </p>                            
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <ul class="data-operation-list list-inline pull-right">
+                    <li class="source">
+                        <span class="source-title">Source:</span> PRTB                   
+                    </li>      
+                    <li>
+                        <a href="#city-rental">
+                            <i class="glyphicon glyphicon-link"></i>
+                            Link
+                        </a>
+                    </li>                                    
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="col-xs-12">
+                <figure>
+                    <figcaption>
+                        Galway City: Average Monthly Rents
+                        <p class="help-block">
+                            <i class="glyphicon glyphicon-info-sign"></i>
+                            Click the area names on the right to show/hide them on the chart
+                        </p>
+                    </figcaption>
+                    <div id="avg-monthly-rental-city-chart" style="width: 100%; min-height: 500px" class=""></div>
+                </figure>   
+            </div>
+           
+        </section>
+
+        <section class="row">
+            <div class="col-xs-12 col-sm-6">
+                <h2 id="county-rental">County Housing Rental</h2>
+                <p class="help-block">
+                    Average Monthly Rents
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <ul class="data-operation-list list-inline pull-right">
+                
+                    <li class="source">
+                        <span class="source-title">Source:</span> PRTB                   
+                    </li>      
+                    <li>
+                        <a href="#county-rental">
+                            <i class="glyphicon glyphicon-link"></i>
+                            Link
+                        </a>
+                    </li>                                    
+                </ul>
+            </div>
+            <div class="clearfix"></div>           
+
+            <div class="col-xs-12">
+                <figure>
+                    <figcaption>
+                        Galway County: Average Monthly Rents
+                        <p class="help-block">
+                            <i class="glyphicon glyphicon-info-sign"></i>
+                            Click the area names on the right to show/hide them on the chart
+                        </p>
+                    </figcaption>
+                    <div id="avg-monthly-rental-county-chart" style="width: 100%; min-height: 500px" class=""></div>
+                </figure>   
+            </div>
+        </section>
+    </div>    
+
+
+    <div class="container">
+        <section class="row">
+            <div class="col-xs-12 col-sm-6">
+                <h2 id="house-prices">House Purchase Prices</h2>
+                <p class="help-block">
+                    Average house prices in Galway, and Nationally
+                </p>                            
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <ul class="data-operation-list list-inline pull-right">
+                    <li class="source">
+                        <span class="source-title">Source:</span> Dept. of the Environment, Community &amp; Local Government                   
+                    </li>      
+                    <li>
+                        <a href="#house-prices">
+                            <i class="glyphicon glyphicon-link"></i>
+                            Link
+                        </a>
+                    </li>                                    
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="col-xs-12">
+                <figure>
+                    <figcaption>
+                        Galway &amp; National House Prices, Quarterly in Euros, 2009-2013
+                        <p class="help-block">
+                            <i class="glyphicon glyphicon-info-sign"></i>
+                            Click the area names on the right to show/hide them on the chart
+                        </p>
+                    </figcaption>
+                    <div id="house-price-chart" style="width: 100%; min-height: 500px" class=""></div>
+                </figure>   
+
+                <footer class="data-note">
+                    <p>
+                        <strong>Data note:</strong> Average house prices are derived from data supplied by the mortgage lending agencies on all loans approved by them. In comparing house prices figures from one period to another, account should be taken of the fact that changes in the mix of dwellings will affect the average figures.
+                    </p>
+                </footer>
+            </div>
+           
+        </section>        
+    </div>
+
+    
+    <div class="container">
+        <section id="disability-support" class="row">
+
+            <div class="col-xs-12 col-sm-8">
+                <h2>Disability Supports</h2>                     
+            </div>
+            
+
+            <div class="clearfix"></div>
+            
+            <div class="col-xs-12">                    
+                <figure>
+                    <figcaption>
+                        Number of Recipients of Illness, Disability and Caring Payments by Payment Type and County, 2013
+                    </figcaption>
+                    <div id="disability-support-chart" style="width: 100%;"></div>
+                </figure>                            
+            </div>
+
+            <div class="col-xs-12">
+                <p class="source">
+                    <span class="source-title">Source:</span> 
+                     Dept. of Social Protection 
+                </p>   
+            </div>
+        </section>
+
+        
+        <section class="row">
+            <div class="col-xs-8">
+                <h2 id="poverty-rates">Poverty Rates</h2>
+                <p class="help-block">
+                    Poverty Rates by Region, statistical indicator and Year
+                    
+                    <span class="pull-right">
+                        <i class="glyphicon glyphicon-info-sign"></i>
+                        Click the area names below the charts to show/hide them                
+                    </span>
+                    <br/>
+                    <br/>
+                </p>                            
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <ul class="data-operation-list list-inline pull-right">
+                    <li class="source">
+                        <span class="source-title">Source:</span> CSO                   
+                    </li>      
+                    <li>
+                        <a href="#poverty-rates">
+                            <i class="glyphicon glyphicon-link"></i>
+                            Link
+                        </a>
+                    </li>                                    
+                </ul>
+            </div>
+
+
+            <div class="clearfix"></div>
+
+            <div class="col-xs-12 col-sm-4">
+                <figure>
+                    <figcaption>
+                        At Risk of Poverty Rate (%)
+                    </figcaption>
+                    <div id="poverty-rates-at-risk-chart" style="width: 100%;" class=""></div>
+                </figure>                   
+            </div>
+
+            <div class="col-xs-12 col-sm-4">
+                <figure>
+                    <figcaption>
+                        Deprivation Rate (%)
+                    </figcaption>
+                    <div id="poverty-rates-depriviation-chart" style="width: 100%;" class=""></div>
+                </figure>                   
+            </div>
+
+            <div class="col-xs-12 col-sm-4">
+                <figure>
+                    <figcaption>
+                        Consistent Poverty Rate (%)           
+                    </figcaption>
+                    <div id="poverty-rates-consistent-chart" style="width: 100%;" class=""></div>
+                </figure>                   
+            </div>
+            
+            <div class="clearfix"></div>
+
+            <footer class="data-note">
+                <p>
+                    <strong>Data note:</strong> <em>Deprivation Rate</em>: An individual is defined as being deprived if they experience two or more forms of enforced deprivation.
+                </p>
+            </footer>
+        </section>        
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 id="culture-head">Cultural Infrastructure</h2>
+                <p class="help-block">
+                    Mapping Heritage Sites, Museums, Art Galleries, Theatres, Theatre Companies and Cinemas
+                </p>
+                
+                <ul class="data-operation-list list-inline">                    
+                    <li>
+                        <a href="http://localhost:8000/galway-heritage-sites.csv">
+                            <i class="glyphicon glyphicon-download"></i>
+                            Download data
+                        </a>
+                    </li>      
+                    <li>
+                        <a href="#culture-head">
+                            <i class="glyphicon glyphicon-link"></i>
+                            Link
+                        </a>
+                    </li>                                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="heritage-map" class="map"></div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 id="markets-head">Galway City Markets and Shopping Centres</h2>
+
+                <ul class="data-operation-list list-inline">
+                    <li class="source">
+                        <span class="source-title">Source:</span> Galway City Council                   
+                    </li>        
+                     <li>
+                        <a href="#markets-head">
+                            <i class="glyphicon glyphicon-link"></i>
+                            Link
+                        </a>
+                    </li>                                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="shopping-centre-map" class="map"></div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-7">
+                <h2 id="commute-map-head">Mapping Commute Times</h2>
+                <ul class="data-operation-list list-inline">
+                    <li class="source">
+                        <span class="source-title">Source:</span> 
+                        <a href="http://airo.maynoothuniversity.ie">AIRO</a>                    
+                    </li>
+                    <li><a href="#commute-map-head">
+                            <i class="glyphicon glyphicon-link"></i>
+                            Link
+                        </a>
+                    </li>                    
+                </ul> 
+            </div>
+            <div class="col-xs-12 col-sm-5">
+                <ul class="list-inline commute-map-nav pull-right">
+                  <li>
+                    <a href="#" id="commute-time-map-galway" class="commute-time-map-switch active" data-commuteLocation="galway">Galway City</a>
+                  </li>
+                  <li>
+                    <a href="#" id="commute-time-map-tuam" class="commute-time-map-switch" data-commuteLocation="tuam">Tuam</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="commute-map"></div>
+
+
+</article>
+
+<div class="container">
+    <div class="clearfix"></div>
+    <p>
+        <a href="#header" id="back-to-top" class="pull-right">
+            <i class="glyphicon glyphicon-arrow-up"></i>
+            Back to Top
+        </a>
+    </p>
+</div>
+
+
+
+        </div> <!-- #main -->
+    </div>
+
+</div>
+
+
+
+<footer id="page-footer" role="contentinfo">
+
+
+  <div id="footer-base-wrapper">
+    <div class="container">
+      <div class="row" id="base-footer">
+        
+        <div class="col-xs-12" id="credits">
+          <p>
+            <small>&copy; Copyright 2016 </small>
+          </p>
+        </div>
+
+       
+      </div>  <!-- .row -->
+    </div>
+  </div> <!-- #footer-base-wrapper -->
+
+
+</footer>
+
+        
+  <script src="js/jquery.min.js"></script>
+  
+    
+  <script src="js/dist/gcc-industry-baseline.vendor.0.1.0.min.js"></script>
+
+    <script src="js/dist/gcc-industry-baseline.lib.0.1.0.min.js"></script> 
+
+  <script src="js/site.js"></script>
+
+      <script src="js/vis-social.js"></script>
+
+
+
+
+
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+
+  
+
+  
+</body>
+</html>
+
+                

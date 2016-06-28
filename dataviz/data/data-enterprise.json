@@ -1,0 +1,888 @@
+{
+    "centres" : [
+        {
+            "name": "Ballinasloe Enterprise & Technology Centre",
+            "lat": "53.340816",
+            "lon": "-8.206615",
+            "address_1": "Creagh",
+            "town": "Ballinasloe",
+            "county": "Galway",
+            "phone": "090 9646516",
+            "email": "ballinasloeenterprise@eircom.net",
+            "client_companies": "15"
+        },
+        {
+            "name": "Connemara West Enterprise Centre",
+            "lat": "53.5504795",
+            "lon": "-9.9452665",
+            "address_1": "Connemara West",
+            "town": "Letterfrack",
+            "county": "Galway",
+            "phone": "095 41047",
+            "email": "connwest@iol.ie",
+            "client_companies": "Unavailable"
+        },
+        {
+            "name": "Westside Enterprise Centre",
+            "lat": "53.276824",
+            "lon": "-9.077352",
+            "address_1": "Bothar le Cheile, Westside",
+            "town": "Galway",
+            "county": "Galway",
+            "phone": "091 583613",
+            "email": "info@stanthonyscu.ie",
+            "client_companies": "Unavailable"
+        },
+        {
+            "name": "Clonbeirne Enterprise Centre",
+            "lat": "53.5585282",
+            "lon": "-8.6481693",
+            "address_1": "Clonbeirne",
+            "town": "Ballinasloe",
+            "county": "Galway",
+            "phone": "093 45126",
+            "email": "info@firstateverything.com",
+            "client_companies": "Unavailable"
+        },
+        {
+            "name": "Galway Technology Centre",
+            "lat": "53.285229",
+            "lon": "-9.027034",
+            "address_1": "Mervue Business Park",
+            "town": "Galway",
+            "county": "Galway",
+            "phone": "091 770007",
+            "email": "info@gtc.ie",
+            "client_companies": "19"
+        },
+        {
+            "name": "Ballybane Enterprise Centre",
+            "lat": "53.2855722",
+            "lon": "-9.0004014",
+            "address_1": "Ballybane",
+            "town": "Galway",
+            "county": "Galway",
+            "phone": "091 386004",
+            "email": "ballybaneec@gmail.com",
+            "client_companies": "13"
+        },
+        {
+            "name": "Innovation in Business Centre, GMIT",
+            "lat": "53.2779575",
+            "lon": "-9.0108795",
+            "address_1": "Dublin Road",
+            "town": "Galway",
+            "county": "",
+            "phone": "",
+            "email": "",
+            "client_companies": "21"
+        },
+        {
+            "name": "Business Innovation Centre, NUI Galway",
+            "lat": "53.282766",
+            "lon": "-9.064246",
+            "address_1": "Newcastle Road",
+            "town": "Galway",
+            "county": "",
+            "phone": "",
+            "email": "",
+            "client_companies": "27"
+        }
+    ],
+    "hpsus": [
+        {
+            "variable_name": "2013", 
+            "total_count": 104
+        },
+        {
+            "variable_name" : "2012", 
+            "total_count": 97
+        },
+        {
+            "variable_name": "2011", 
+            "total_count": 93
+        }
+    ],
+    "entrepreneurship": [
+        {
+            "type": "Aspiring entrepreneurs",
+            "chart_id"  : "entrep-aspiring-chart",
+            "data": [
+                {
+                    "variable_name": "2013",
+                    "total_count" : 14.70
+                },
+                {
+                    "variable_name": "2012",
+                    "total_count" : 8.0
+                },
+                {
+                    "variable_name": "2011",
+                    "total_count" : 8.50
+                },
+                {
+                    "variable_name": "2010",
+                    "total_count" : 8.40
+                }
+            ]
+        },
+        {
+            "type": "Early stage entrepreneurs",
+            "chart_id"  : "entrep-early-chart",
+            "data": [
+                {
+                    "variable_name": "2013",
+                    "total_count" : 9.2
+                },
+                {
+                    "variable_name": "2012",
+                    "total_count" : 6.1
+                },
+                {
+                    "variable_name": "2011",
+                    "total_count" : 7.3
+                },
+                {
+                    "variable_name": "2010",
+                    "total_count" : 6.8
+                }
+            ]
+        },
+        {
+            "type": "Owner managers of established businesses",
+            "chart_id"  : "entrep-established-chart",
+            "data": [
+                {
+                    "variable_name": "2013",
+                    "total_count" : 7.50
+                },
+                {
+                    "variable_name": "2012",
+                    "total_count" : 8.3
+                },
+                {
+                    "variable_name": "2011",
+                    "total_count" : 8.0
+                },
+                {
+                    "variable_name": "2010",
+                    "total_count" : 8.6
+                }
+            ]
+        },
+        {
+            "type": "Entrepreneurs discontinuing businesses",
+            "chart_id"  : "entrep-discontinuing-chart",
+            "data": [
+                {
+                    "variable_name": "2013",
+                    "total_count" : 1.90
+                },
+                {
+                    "variable_name": "2012",
+                    "total_count" : 1.2
+                },
+                {
+                    "variable_name": "2011",
+                    "total_count" : 2.8
+                },
+                {
+                    "variable_name": "2010",
+                    "total_count" : 1.2
+                }
+            ]
+        }
+    ],
+
+    "bmw_rnd_personnel": [
+        {
+            "data": {
+                "year_2007": "159",
+                "year_2009": "162",
+                "year_2011": "204"
+            },
+            "area": "Border, Midland and Western",
+            "job": "PhD qualified researchers"
+        },
+        {
+            "data": {
+                "year_2007": "1550",
+                "year_2009": "1658",
+                "year_2011": "2056"
+            },
+            "area": "Border, Midland and Western",
+            "job": "Other researchers"
+        },
+        {
+            "data": {
+                "year_2007": "518",
+                "year_2009": "715",
+                "year_2011": "827"
+            },
+            "area": "Border, Midland and Western",
+            "job": "Technicians"
+        },
+        {
+            "data": {
+                "year_2007": "750",
+                "year_2009": "819",
+                "year_2011": "945"
+            },
+            "area": "Border, Midland and Western",
+            "job": "Support staff"
+        },
+        {
+            "data": {
+                "year_2007": "1020",
+                "year_2009": "1477",
+                "year_2011": "1347"
+            },
+            "area": "Southern and Eastern",
+            "job": "PhD qualified researchers"
+        },
+        {
+            "data": {
+                "year_2007": "5513",
+                "year_2009": "5664",
+                "year_2011": "7012"
+            },
+            "area": "Southern and Eastern",
+            "job": "Other researchers"
+        },
+        {
+            "data": {
+                "year_2007": "2430",
+                "year_2009": "2857",
+                "year_2011": "3652"
+            },
+            "area": "Southern and Eastern",
+            "job": "Technicians"
+        },
+        {
+            "data": {
+                "year_2007": "2010",
+                "year_2009": "2423",
+                "year_2011": "3026"
+            },
+            "area": "Southern and Eastern",
+            "job": "Support staff"
+        }
+
+    ],
+
+    "rnd_expenditure": 
+        {
+            "bmw": {
+                "years": [2007, 2009, 2011],
+                "series": [
+                    {
+                        "name": "Capital Expenditure - <br/> Land and Buildings",
+                        "data": [17729000, 6347000, 9626000]                        
+                    },{
+                        "name": "Capital Expenditure - <br/> Payments made for licences to use intellectual products",
+                        "data": [ null, 498000, 273000]                        
+                    },{
+                        "name": "Capital Expenditure - <br/> Instruments and Equipment (excluding Software)",
+                        "data": [ 27197000,33083000, 23635000]
+                    },{
+                        "name": "Capital Expenditure - <br/> Software purchased wholly for Research and Development purposes",
+                        "data": [ null, 490000, 1833000]                        
+                    },{
+                        "name": "Capital Expenditure - <br/> Software development by company in-house and used in-house",
+                        "data": [ null, 1185000, 246000]                        
+                    },{
+                        "name": "Current Expenditure - <br/> Labour Costs",
+                        "data": [158160000, 196329000, 198554000]                        
+                    },
+                    {
+                        "name": "Current Expenditure - <br/> Other Current Costs",
+                        "data": [95886000, 134827000, 150157000]                        
+                    }
+                ]
+
+            },
+        "se": {
+            "years": [2007, 2009, 2011],
+            "series": [
+                {
+                    "name": "Capital Expenditure - <br/> Land and Buildings",
+                    "data": [55837000, 43267000, 22562000]                        
+                },{
+                    "name": "Capital Expenditure - <br/> Payments made for licences to use intellectual products",
+                    "data": [ null, 23469000, 108659000]                        
+                },{
+                    "name": "Capital Expenditure - <br/> Instruments and Equipment (excluding Software)",
+                    "data": [ 178508000, 188643000, 69058000]                        
+                },{
+                    "name": "Capital Expenditure - <br/> Software purchased wholly for Research and Development purposes",
+                    "data": [  null, 27150000, 10488000]                        
+                },{
+                    "name": "Capital Expenditure - <br/> Software development by company in-house and used in-house",
+                    "data": [ null, 1480000, 6364000]                        
+                },{
+                    "name": "Current Expenditure - <br/> Labour Costs",
+                    "data": [685687000,751168000 , 807670000]
+                },
+                {
+                    "name": "Current Expenditure - <br/> Other Current Costs",
+                    "data": [384181000, 460519000, 450444000]                        
+                }
+            ]
+        }
+    },
+
+    "bmw_employment": 
+    {
+        "year_2004": [
+            {
+                "variable_name": "Agriculture, Forestry and Fishing",
+                "total_count": 47.8
+            },
+            {
+                "variable_name": "Industry",
+                "total_count": 81.8
+            },
+            {
+                "variable_name": "Construction",
+                "total_count": 57
+            },
+            {
+                "variable_name": "Wholesale and Retail Trade",
+                "total_count": 63.6
+            },
+            {
+                "variable_name": "Transportation and Storage",
+                "total_count": 16.5
+            },
+            {
+                "variable_name": "Accommodation and Food Service Activities",
+                "total_count": 28.6
+            },
+            {
+                "variable_name": "Information and Communication",
+                "total_count": 10.3
+            },
+            {
+                "variable_name": "Financial, Insurance and Real Estate Activities",
+                "total_count": 14.1
+            },
+            {
+                "variable_name": "Professional, Scientific and Technical Activities",
+                "total_count": 16.8
+            },
+            {
+                "variable_name": "Administrative and Support Service Activities",
+                "total_count": 9.9
+            },
+            {
+                "variable_name": "Public Administration and Defence; Compulsory Social Security",
+                "total_count": 20.9
+            },
+            {
+                "variable_name": "Education",
+                "total_count": 29.4
+            },
+            {
+                "variable_name": "Human Health and Social Work Activities",
+                "total_count": 51.2
+            },
+            {
+                "variable_name": "Other NACE Activities",
+                "total_count": 22.3
+            }
+        ],
+        "year_2007": [
+            {
+                "variable_name": "Agriculture, Forestry and Fishing",
+                "total_count": 42.9
+            },
+            {
+                "variable_name": "Industry",
+                "total_count": 86.1
+            },
+            {
+                "variable_name": "Construction",
+                "total_count": 81.1
+            },
+            {
+                "variable_name": "Wholesale and Retail Trade",
+                "total_count": 77.7
+            },
+            {
+                "variable_name": "Transportation and Storage",
+                "total_count": 16.8
+            },
+            {
+                "variable_name": "Accommodation and Food Service Activities",
+                "total_count": 36.1
+            },
+            {
+                "variable_name": "Information and Communication",
+                "total_count": 10
+            },
+            {
+                "variable_name": "Financial, Insurance and Real Estate Activities",
+                "total_count": 15.1
+            },
+            {
+                "variable_name": "Professional, Scientific and Technical Activities",
+                "total_count": 19.6
+            },
+            {
+                "variable_name": "Administrative and Support Service Activities",
+                "total_count": 12.4
+            },
+            {
+                "variable_name": "Public Administration and Defence; Compulsory Social Security",
+                "total_count": 26.9
+            },
+            {
+                "variable_name": "Education",
+                "total_count": 36.9
+            },
+            {
+                "variable_name": "Human Health and Social Work Activities",
+                "total_count": 59.5
+            },
+            {
+                "variable_name": "Other NACE Activities",
+                "total_count": 23.4
+            }
+        ],
+        "year_2010": [
+            {
+                "variable_name": "Agriculture, Forestry and Fishing",
+                "total_count": 32.2
+            },
+            {
+                "variable_name": "Industry",
+                "total_count": 71.5
+            },
+            {
+                "variable_name": "Construction",
+                "total_count": 36.3
+            },
+            {
+                "variable_name": "Wholesale and Retail Trade",
+                "total_count": 70.7
+            },
+            {
+                "variable_name": "Transportation and Storage",
+                "total_count": 18
+            },
+            {
+                "variable_name": "Accommodation and Food Service Activities",
+                "total_count": 32.5
+            },
+            {
+                "variable_name": "Information and Communication",
+                "total_count": 12.8
+            },
+            {
+                "variable_name": "Financial, Insurance and Real Estate Activities",
+                "total_count": 13.7
+            },
+            {
+                "variable_name": "Professional, Scientific and Technical Activities",
+                "total_count": 20.5
+            },
+            {
+                "variable_name": "Administrative and Support Service Activities",
+                "total_count": 12
+            },
+            {
+                "variable_name": "Public Administration and Defence; Compulsory Social Security",
+                "total_count": 27.8
+            },
+            {
+                "variable_name": "Education",
+                "total_count": 39.3
+            },
+            {
+                "variable_name": "Human Health and Social Work Activities",
+                "total_count": 61.5
+            },
+            {
+                "variable_name": "Other NACE Activities",
+                "total_count": 25.3
+            }
+        ]        
+    },    
+
+    "ei_employment": [
+        
+        {
+            "variable_name": "2009",
+            "total_count": 9512
+        },
+        {
+            "variable_name": "2010",
+            "total_count": 9501
+        },
+        {
+            "variable_name": "2011",
+            "total_count": 9998
+        },
+        {
+            "variable_name": "2012",
+            "total_count": 10236
+        },
+        {
+            "variable_name": "2013",
+            "total_count": 10485
+        }
+    ],
+    "ida_employment": [
+        {
+            "variable_name": "2009",
+            "total_count": 13435
+        },
+        {
+            "variable_name": "2010",
+            "total_count": 13877
+        },
+        {
+            "variable_name": "2011",
+            "total_count": 15730
+        },
+        {
+            "variable_name": "2012",
+            "total_count": 16447
+        },
+        {
+            "variable_name": "2013",
+            "total_count": 17343
+        }
+    ],
+    "udras_employment": 
+    [
+        {
+            "set": "Gaillimh",
+            "primary": true,
+            "data": [
+                {
+                    "variable_name": "2011",
+                    "total_count": 2754
+                },
+                {
+                    "variable_name": "2012",
+                    "total_count": 2730 
+                },
+                {
+                    "variable_name": "2013",
+                    "total_count": 2741 
+                }
+            ]
+        },
+        {
+            "set": "Dún na nGall",
+            "data": [     
+                {
+                    "variable_name": "2011",
+                    "total_count": 1867
+                },
+                {
+                    "variable_name": "2012",
+                    "total_count": 1878 
+                },
+                {
+                    "variable_name": "2013",
+                    "total_count": 1942 
+                }
+            ]
+        },
+        {
+            "set": "Maigh Eo",
+            "data": [     
+                {
+                    "variable_name": "2011",
+                    "total_count": 675
+                },
+                {
+                    "variable_name": "2012",
+                    "total_count": 711 
+                },
+                {
+                    "variable_name": "2013",
+                    "total_count": 728 
+                }
+            ]
+        },
+        {
+            "set": "An Mhí",
+            "data": [     
+                {
+                    "variable_name": "2011",
+                    "total_count": 190
+                },
+                {
+                    "variable_name": "2012",
+                    "total_count": 161 
+                },
+                {
+                    "variable_name": "2013",
+                    "total_count": 167 
+                }
+            ]
+        },
+        {
+            "set": "Ciarraí",
+            "data": [     
+                {
+                    "variable_name": "2011",
+                    "total_count": 730
+                },
+                {
+                    "variable_name": "2012",
+                    "total_count": 706 
+                },
+                {
+                    "variable_name": "2013",
+                    "total_count": 683 
+                }
+            ]
+        },
+        {
+            "set": "Corcaigh",
+            "data": [     
+                {
+                    "variable_name": "2011",
+                    "total_count": 633
+                },
+                {
+                    "variable_name": "2012",
+                    "total_count": 610 
+                },
+                {
+                    "variable_name": "2013",
+                    "total_count": 577 
+                }
+            ]
+        },
+        {
+            "set": "Port Láirge",
+            "data": [     
+                {
+                    "variable_name": "2011",
+                    "total_count": 121
+                },
+                {
+                    "variable_name": "2012",
+                    "total_count": 137 
+                },
+                {
+                    "variable_name": "2013",
+                    "total_count": 131 
+                }
+            ]
+        }
+
+    ],
+    "udras_projects": 
+    [
+        {
+            "area": "Dún na nGall" ,
+            "number_projects": 37,
+            "total_grants": 2943914
+        },
+        {
+            "area": "Maigh Eo" ,
+            "number_projects": 15,
+            "total_grants": 778146
+        },
+        {
+            "area": "Gaillimh" ,
+            "number_projects": 50,
+            "total_grants": 4275146
+        },
+        {
+            "area": "An Mhí" ,
+            "number_projects": 3,
+            "total_grants": 410396
+        },
+        {
+            "area": "Ciarraí" ,
+            "number_projects": 29,
+            "total_grants": 475195
+        },
+        {
+            "area": "Corcaigh" ,
+            "number_projects": 12,
+            "total_grants": 1156336
+        },
+        {
+            "area": "Port Láirge" ,
+            "number_projects": 4,
+            "total_grants": 328100
+        }
+    ],
+
+    "employment":
+    {
+        "live_register":{
+            "west":{               
+                "periods": ["2009H1","2009H2","2010H1","2010H2","2011H1","2011H2","2012H1","2012H2","2013H1","2013H2","2014H1"],
+                "series": [{
+                    "name": "Jobseekers allowance applications",
+                    "data": [17384, 22623, 25115, 26356, 27269, 27757, 27006, 27411, 27490, 27511, 26601]
+                },
+                {
+                    "name": "Jobseekers benefit claims",
+                    "data": [17221, 14114, 12383, 10543, 10399, 8402, 8604, 7455, 7466, 5262, 5259]
+                },{
+                    "name": "Other registrants",
+                    "data": [1314, 1781, 2198, 2452, 2752, 2791, 2951, 3030, 3188, 3238, 3318]
+                }]
+            },
+            "state":
+            {
+                "periods": ["2009H1","2009H2","2010H1","2010H2","2011H1","2011H2","2012H1","2012H2","2013H1","2013H2","2014H1"],
+                "series": [
+                    {
+                        "name": "Jobseekers allowance applications",
+                        "data": [174238, 226550, 261460, 281064, 293203, 301333, 301164, 305593, 303770, 303191, 295762]
+                    },{
+                        "name": "Jobseekers benefit claims",
+                        "data": [197086, 168488, 148660, 122716, 117488, 99013, 96212, 81618, 79736, 58543, 56872]
+                    },{
+                        "name": "Other registrants",
+                        "data": [12789, 17369, 22537, 25773, 28880, 30086, 32625, 32961, 34087, 34778, 35925]
+                    }
+                ]
+            }
+        },
+        "live_register_age":{
+            "periods": ["2009H1","2009H2","2010H1","2010H2","2011H1","2011H2","2012H1","2012H2","2013H1","2013H2","2014H1"],
+            "jobseekers_allowance":{                
+                "series":[
+                    {
+                        "name": "Under 20 years",   
+                        "data" : [1229,  1214, 1177, 1155, 1057, 1095, 931,  926,  864,  822,  745]
+                    },
+                    {
+                        "name": "20 - 24 years",   
+                        "data" : [3785,     5110,     5209,     5282,     5044,     5120,     4531,     4627,     4245,     4211,     3751]
+                    },
+                    {
+                        "name": "25 - 34 years",   
+                        "data" : [5077,     6905,     7875,     8336,     8728,     8743,     8562,     8557,     8675,     8389,     8040]
+                    },
+                    {
+                        "name": "35 - 44 years",   
+                        "data" : [3398,     4429,     5143,     5467,     5829,     5844,     5725,     5808,     5925,     6037,     5974]
+                    },
+                    {
+                        "name": "45 - 54 years",   
+                        "data" : [2566,     3191,     3645,     3872,     4161,     4319,     4472,     4554,     4649,     4807,     4825]
+                    },
+                    {
+                        "name": "55 - 59 years",   
+                        "data" : [798,  1081,     1254,     1339,     1466,     1600,     1694,     1803,     1895,     1939,     1924]
+                    },
+                    {
+                        "name": "60 - 64 years",   
+                        "data" : [531,  693,  812,  905,  984,  1036,     1091,     1136,     1237,     1306,     1342]
+                    }
+                ]
+            },
+            "jobseekers_benefit":{
+                "series":[
+                    {
+                        "name": "Under 20 years",   
+                        "data": [83, 25,  23,  27,  26,  9,   11,  3,   4,   2,   2]
+                    },
+                    {
+                        "name": "20 - 24 years",   
+                        "data": [2449,   1684, 1325, 1089, 1006, 766, 650, 573, 500, 371, 327]
+                    },
+                    {
+                        "name": "25 - 34 years",   
+                        "data": [6318,   5252, 4611, 3760, 3649, 2859, 2899, 2398, 2405, 1618, 1584]
+                    },
+                    {
+                        "name": "35 - 44 years",   
+                        "data": [3861,3330, 3041, 2606, 2517, 2043, 2150, 1934, 1958, 1454, 1437]
+                    },
+                    {
+                        "name": "45 - 54 years",
+                        "data": [2756,2370, 2039, 1822, 1893, 1608, 1636, 1426, 1465, 1068, 1132]
+                    },
+                    {
+                        "name": "55 - 59 years",
+                        "data": [962, 809, 747, 666, 734, 594, 628, 580, 634, 413, 407]
+                    },
+                    {
+                        "name": "60 - 64 years",
+                        "data": [792, 644, 597, 573, 574, 523, 630, 541, 500, 336, 370]
+                    }
+                ]
+            },
+            "other_registrants":{
+                "series":[
+                    {
+                        "name": "Under 20 years",   
+                        "data": [4,  1,   2,   3,   2,   1,   0,   0,   0,   0,   1]
+                    },
+                    {
+                        "name": "20 - 24 years",   
+                        "data": [10, 21,  25,  22,  28,  29,  29,  19,  21,  19,  23]
+                    },
+                    {
+                        "name": "25 - 34 years",   
+                        "data": [80, 153, 184, 220, 226, 206, 211, 214, 193, 190, 180]
+                    },
+                    {
+                        "name": "35 - 44 years",   
+                        "data": [342,    431, 544, 587, 628, 632, 612, 629, 625, 594, 570]
+                    },
+                    {
+                        "name": "45 - 54 years",
+                        "data": [363,    480, 560, 612, 674, 673, 672, 662, 690, 707, 709]
+                    },
+                    {
+                        "name": "55 - 59 years",
+                        "data": [236,    325, 386, 446, 536, 563, 644, 664, 713, 722, 759]
+                    },
+                    {
+                        "name": "60 - 64 years",
+                        "data": [279,    370, 497, 562, 658, 687, 783, 842, 946, 1006, 1076]
+                    }
+                ]
+            }
+        },
+        "live_register_office":{
+            "periods": ["2010M01","2010M02","2010M03","2010M04","2010M05","2010M06","2010M07","2010M08","2010M09","2010M10","2010M11","2010M12","2011M01","2011M02","2011M03","2011M04","2011M05","2011M06","2011M07","2011M08","2011M09","2011M10","2011M11","2011M12","2012M01","2012M02","2012M03","2012M04","2012M05","2012M06","2012M07","2012M08","2012M09","2012M10","2012M11","2012M12","2013M01","2013M02","2013M03","2013M04","2013M05","2013M06","2013M07","2013M08","2013M09","2013M10","2013M11","2013M12","2014M01","2014M02","2014M03","2014M04","2014M05","2014M06","2014M07","2014M08","2014M09","2014M10","2014M11"],
+            "series":[
+                {
+                    "name": "Galway County",
+                    "data": [23583, 23580, 23241, 22962, 23511, 24289, 25221, 25389, 23735, 22897, 22691, 23099, 23570, 23604, 23428, 23224, 23449, 24345, 25038, 25111, 23081, 22434, 22446, 22585, 22913, 22835, 22347, 22031, 22061, 22937, 23585, 23831, 22290, 21627, 21559, 22081, 22317, 22443, 22204, 21768, 22029, 22602, 23004, 22760, 21055, 20325, 20001, 20174, 20390, 20399, 19950, 19654, 19865, 20446, 20707, 20582, 18595, 18025, 17956]
+                },
+                {
+                    "name": "Ballinasloe",
+                    "data": [2643,  2639,  2591,  2547,  2575,  2659,  2742,  2759,  2605,  2593,  2597,  2725,  2692,  2680,  2648,  2599,  2559,  2648,  2735,  2737,  2506,  2491,  2462,  2526,  2549,  2522,  2455,  2440,  2437,  2539,  2608,  2617,  2515,  2478,  2472,  2545,  2558,  2546,  2518,  2431,  2461,  2506,  2564,  2505,  2339,  2312,  2313,  2357,  2391,  2381,  2339,  2284,  2254,  2309,  2330,  2343,  2198,  2154,  2104]
+                },
+                {
+                    "name": "Clifden",
+                    "data": [1351,  1318,  1281,  1193,  1152,  1187,  1210,  1192,  1176,  1185,  1268,  1273,  1357,  1345,  1333,  1249,  1216,  1240,  1233,  1255,  1252,  1243,  1308,  1341,  1357,  1355,  1268,  1241,  1169,  1182,  1179,  1194,  1125,  1146,  1251,  1291,  1330,  1322,  1250,  1176,  1143,  1152,  1164,  1103,  1063,  1056,  1168,  1200,  1214,  1215,  1133,  1085,  1039,  1034,  1011,  980, 912, 964, 1051]
+                },
+                {
+                    "name": "Galway City",
+                    "data": [12157, 12131, 11912, 11895, 12311, 12751, 13334, 13480, 12511, 11851, 11652, 11803, 12026, 12073, 12012, 11968, 12269, 12799, 13264, 13313, 12049, 11578, 11681, 11609, 11734, 11715, 11620, 11448, 11569, 12076, 12447, 12634, 11623, 11003, 10777, 11096, 11233, 11371, 11259, 11176, 11395, 11708, 11955, 11909, 10776, 10290, 9952,  9931,  10076, 10111, 9981,  9775,  10083, 10414, 10553, 10525, 9388,  8943,  8947]
+                },
+                {
+                    "name": "Gort",
+                    "data": [1507,  1513,  1513,  1473,  1484,  1488,  1535,  1535,  1462,  1431,  1434,  1479,  1493,  1484,  1458,  1449,  1455,  1507,  1525,  1513,  1426,  1412,  1420,  1441,  1459,  1479,  1429,  1423,  1398,  1471,  1518,  1536,  1442,  1416,  1426,  1457,  1475,  1488,  1469,  1413,  1417,  1454,  1503,  1491,  1431,  1412,  1398,  1412,  1425,  1404,  1333,  1344,  1310,  1372,  1406,  1403,  1266,  1282,  1226]
+                },
+                {
+                    "name": "Loughrea",
+                    "data": [2525,  2569,  2541,  2513,  2527,  2628,  2709,  2732,  2567,  2530,  2437,  2450,  2536,  2565,  2531,  2530,  2527,  2595,  2634,  2646,  2435,  2353,  2314,  2355,  2429,  2416,  2347,  2274,  2254,  2336,  2420,  2417,  2323,  2343,  2379,  2396,  2445,  2435,  2431,  2397,  2357,  2437,  2450,  2427,  2262,  2234,  2182,  2219,  2229,  2240,  2200,  2158,  2136,  2196,  2222,  2218,  1971,  1934,  1896]
+                },
+                {
+                    "name": "Tuam",
+                    "data": [3400,  3410,  3403,  3341,  3462,  3576,  3691,  3691,  3414,  3307,  3303,  3369,  3466,  3457,  3446,  3429,  3423,  3556,  3647,  3647,  3413,  3357,  3261,  3313,  3385,  3348,  3228,  3205,  3234,  3333,  3413,  3433,  3262,  3241,  3254,  3296,  3276,  3281,  3277,  3175,  3256,  3345,  3368,  3325,  3184,  3021,  2988,  3055,  3055,  3048,  2964,  3008,  3043,  3121,  3185,  3113,  2860,  2748,  2732]
+                }
+            ]
+        }
+    }
+    
+}

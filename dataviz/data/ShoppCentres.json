@@ -1,0 +1,15 @@
+{"name":"ShoppCentres","type":"FeatureCollection"
+,"features":[
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-1007499.94573128,6999841.9554136]},"properties":{"ESTATEREF":"A170","COMPANYNA":"Corrib Shopping Centre, Galway","APACODE":"","LAT":"53.275461","LONG":"-9.050526"}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[-1000207.13426986,7001978.46949275]},"properties":{"ESTATEREF":"346","COMPANYNA":"Doughiska / Merlin Commercial Park, Galway","APACODE":"","LAT":"53.286964","LONG":"-8.985014"}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[-1007551.92302792,6999572.59181775]},"properties":{"ESTATEREF":"357","COMPANYNA":"Eyre Square Centre, Galway","APACODE":"","LAT":"53.27401","LONG":"-9.050993"}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[-1006227.80440162,7002769.99908262]},"properties":{"ESTATEREF":"701","COMPANYNA":"Galway Retail Park","APACODE":"","LAT":"53.291224","LONG":"-9.039098"}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[-1007046.13624234,7000944.7199307]},"properties":{"ESTATEREF":"A090","COMPANYNA":"Galway Shopping Centre, Headford Road","APACODE":"","LAT":"53.281398","LONG":"-9.046449"}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[-1006792.62168678,7001526.37470346]},"properties":{"ESTATEREF":"A079","COMPANYNA":"Terryland Retail Park, Galway","APACODE":"","LAT":"53.28453","LONG":"-9.044172"}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[-1005345.51283427,7001128.62694924]},"properties":{"ESTATEREF":"A298","COMPANYNA":"Wellpark Retail Park, Galway","APACODE":"","LAT":"53.282389","LONG":"-9.031172"}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[-1012811.40829276,6999390.39871377]},"properties":{"ESTATEREF":"A127","COMPANYNA":"Knocknacarra Shopping Centre, Galway","APACODE":"","LAT":"53.273029","LONG":"-9.09824"}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[-1010413.35936931,7000082.00309872]},"properties":{"ESTATEREF":"","COMPANYNA":"Westside Shopping Centre","APACODE":"","LAT":"53.276753","LONG":"-9.076698"}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[-1003235.84373089,7001723.23572743]},"properties":{"ESTATEREF":"","COMPANYNA":"Ballybane Shopping Centre","APACODE":"","LAT":"53.28559","LONG":"-9.012221"}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[-1000446.42219449,7002677.06904063]},"properties":{"ESTATEREF":"","COMPANYNA":"Briarhill Shopping Centre","APACODE":"","LAT":"53.290724","LONG":"-8.987163"}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[-1007128.00950142,7000748.69593478]},"properties":{"ESTATEREF":"A169","COMPANYNA":"Galway Retail Park, Galway","APACODE":"","LAT":"53.280343","LONG":"-9.047185"}}
+]}
