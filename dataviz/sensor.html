@@ -32,7 +32,7 @@
     function sensorTemp(){ 
       format = d3.time.format("%d/%m/%Y %H:%M");
 
-      function draw(data) {
+      function draw(dataTemp) {
           "use strict";
 
           // set margins according to Mike Bostock's margin conventions
@@ -64,19 +64,19 @@
 
           // bind our data to svg circles for the scatter plot
           svg.selectAll("circle")
-              .data(data)
+              .data(dataTemp)
               .enter()
               .append("circle")
 
             // maximum measurement for Temperature
             //var max_y = 2100
-            var max_y = d3.max(data, function(d) {
+            var max_y = d3.max(dataTemp, function(d) {
                 return d[field1];
             });
 
             // get min/max times of first day of data
             // (we will need a new extent for each day)
-            var time_extent = d3.extent(data, function(d){
+            var time_extent = d3.extent(dataTemp, function(d){
                 return format.parse(d['Timezone']);
             });
 
@@ -147,7 +147,7 @@
 
             // append a SVG path that corresponds to the line chart
             svg.append("path")
-              .datum(data)
+              .datum(dataTemp)
               .attr("class", "line")
               .attr("d", line);
         };
@@ -161,7 +161,7 @@
         function sensorHum(){ 
       format = d3.time.format("%d/%m/%Y %H:%M");
 
-      function draw(data) {
+      function draw(dataHum) {
           "use strict";
 
           // set margins according to Mike Bostock's margin conventions
@@ -193,19 +193,19 @@
 
           // bind our data to svg circles for the scatter plot
           svg.selectAll("circle")
-              .data(data)
+              .data(dataHum)
               .enter()
               .append("circle")
 
             // maximum measurement for Humidity
             //var max_y = 2100
-            var max_y = d3.max(data, function(d) {
+            var max_y = d3.max(dataHum, function(d) {
                 return d[field1];
             });
 
             // get min/max times of first day of data
             // (we will need a new extent for each day)
-            var time_extent = d3.extent(data, function(d){
+            var time_extent = d3.extent(dataHum, function(d){
                 return format.parse(d['Timezone']);
             });
 
@@ -276,7 +276,7 @@
 
             // append a SVG path that corresponds to the line chart
             svg.append("path")
-              .datum(data)
+              .datum(dataHum)
               .attr("class", "line")
               .attr("d", line);
         };
@@ -286,11 +286,11 @@
                 // load our data file asynchronously and pass the data
                 // to the draw function once it is loaded.
                 d3.csv("data/InsightKitchenRoom5November2015Every3Hours.csv", draw);}
-                
+
     function sensorCO2(){ 
       format = d3.time.format("%d/%m/%Y %H:%M");
 
-      function draw(data) {
+      function draw(dataCO2) {
           "use strict";
 
           // set margins according to Mike Bostock's margin conventions
@@ -322,19 +322,19 @@
 
           // bind our data to svg circles for the scatter plot
           svg.selectAll("circle")
-              .data(data)
+              .data(dataCO2)
               .enter()
               .append("circle")
 
             // maximum measurement for CO2
             //var max_y = 2100
-            var max_y = d3.max(data, function(d) {
+            var max_y = d3.max(dataCO2, function(d) {
                 return d[field1];
             });
 
             // get min/max times of first day of data
             // (we will need a new extent for each day)
-            var time_extent = d3.extent(data, function(d){
+            var time_extent = d3.extent(dataCO2, function(d){
                 return format.parse(d['Timezone']);
             });
 
@@ -405,7 +405,7 @@
 
             // append a SVG path that corresponds to the line chart
             svg.append("path")
-              .datum(data)
+              .datum(dataCO2)
               .attr("class", "line")
               .attr("d", line);
         };
@@ -420,7 +420,7 @@
     function sensorNoise(){ 
       format = d3.time.format("%d/%m/%Y %H:%M");
 
-      function draw(data) {
+      function draw(dataNoise) {
           "use strict";
 
           // set margins according to Mike Bostock's margin conventions
@@ -452,19 +452,19 @@
 
           // bind our data to svg circles for the scatter plot
           svg.selectAll("circle")
-              .data(data)
+              .data(dataNoise)
               .enter()
               .append("circle")
 
             // maximum measurement for Noise
             //var max_y = 2100
-            var max_y = d3.max(data, function(d) {
+            var max_y = d3.max(dataNoise, function(d) {
                 return d[field1];
             });
 
             // get min/max times of first day of data
             // (we will need a new extent for each day)
-            var time_extent = d3.extent(data, function(d){
+            var time_extent = d3.extent(dataNoise, function(d){
                 return format.parse(d['Timezone']);
             });
 
@@ -535,7 +535,7 @@
 
             // append a SVG path that corresponds to the line chart
             svg.append("path")
-              .datum(data)
+              .datum(dataNoise)
               .attr("class", "line")
               .attr("d", line);
         };
@@ -550,7 +550,7 @@
         function sensorPressure(){ 
       format = d3.time.format("%d/%m/%Y %H:%M");
 
-      function draw(data) {
+      function draw(dataPressure) {
           "use strict";
 
           // set margins according to Mike Bostock's margin conventions
@@ -582,19 +582,19 @@
 
           // bind our data to svg circles for the scatter plot
           svg.selectAll("circle")
-              .data(data)
+              .data(dataPressure)
               .enter()
               .append("circle")
 
             // maximum measurement for Pressure
             //var max_y = 2100
-            var max_y = d3.max(data, function(d) {
+            var max_y = d3.max(dataPressure, function(d) {
                 return d[field1];
             });
 
             // get min/max times of first day of data
             // (we will need a new extent for each day)
-            var time_extent = d3.extent(data, function(d){
+            var time_extent = d3.extent(dataPressure, function(d){
                 return format.parse(d['Timezone']);
             });
 
@@ -665,7 +665,7 @@
 
             // append a SVG path that corresponds to the line chart
             svg.append("path")
-              .datum(data)
+              .datum(dataPressure)
               .attr("class", "line")
               .attr("d", line);
         };
