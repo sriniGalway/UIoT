@@ -68,10 +68,10 @@
               .append("circle")
 
             // maximum measurement for CO2
-            var max_y = 2100
-            //var max_y = d3.max(data, function(d) {
-            //    return d[field1];
-            //});
+            //var max_y = 2100
+            var max_y = d3.max(data, function(d) {
+                return d[field1];
+            });
 
             // get min/max times of first day of data
             // (we will need a new extent for each day)
@@ -197,11 +197,11 @@
               .enter()
               .append("circle")
 
-            // maximum measurement for CO2
-            var max_y = 2100
-            //var max_y = d3.max(data, function(d) {
-            //    return d[field1];
-            //});
+            // maximum measurement for Noise
+            //var max_y = 2100
+            var max_y = d3.max(data, function(d) {
+                return d[field1];
+            });
 
             // get min/max times of first day of data
             // (we will need a new extent for each day)
@@ -325,11 +325,11 @@
               .enter()
               .append("circle")
 
-            // maximum measurement for CO2
-            var max_y = 2100
-            //var max_y = d3.max(data, function(d) {
-            //    return d[field1];
-            //});
+            // maximum measurement for Humidity
+            //var max_y = 2100
+            var max_y = d3.max(data, function(d) {
+                return d[field1];
+            });
 
             // get min/max times of first day of data
             // (we will need a new extent for each day)
@@ -453,11 +453,11 @@
               .enter()
               .append("circle")
 
-            // maximum measurement for CO2
-            var max_y = 2100
-            //var max_y = d3.max(data, function(d) {
-            //    return d[field1];
-            //});
+            // maximum measurement for Temperature
+            //var max_y = 2100
+            var max_y = d3.max(data, function(d) {
+                return d[field1];
+            });
 
             // get min/max times of first day of data
             // (we will need a new extent for each day)
@@ -582,11 +582,11 @@
               .enter()
               .append("circle")
 
-            // maximum measurement for CO2
-            var max_y = 2100
-            //var max_y = d3.max(data, function(d) {
-            //    return d[field1];
-            //});
+            // maximum measurement for Pressure
+            //var max_y = 2100
+            var max_y = d3.max(data, function(d) {
+                return d[field1];
+            });
 
             // get min/max times of first day of data
             // (we will need a new extent for each day)
