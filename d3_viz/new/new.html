@@ -1,0 +1,111 @@
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Vendor data</title>
+	<script src="d3.min.js"></script>
+	<script type="text/javascript" src="lib/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/jquery.history.js"></script>
+	<script type="text/javascript" src="lib/vis4.js"></script>
+	<script type="text/javascript" src="lib/Tween.js"></script>
+	<script type="text/javascript" src="lib/raphael-min.js"></script>
+	<script type="text/javascript" src="bubbletree/build/bubbletree.js"></script>
+	<link rel="stylesheet" type="text/css" href="bubbletree/build/bubbletree.css" />	
+	<script type="text/javascript">
+
+	//function for by Item data visualization
+	function renderData() {
+		d3.csv("http://localhost:8000/q12014.csv", function(purchase) {
+  	console.log(purchase[0]);
+
+  	//To fetch Item data
+	var ItemMetrics = d3.nest()
+  		.key(function(d) { return d.Item_Description; })
+  		.rollup(function(v) { return {
+    		Vendor: v.Vendor_name,
+    		Amt: v.Paid_Amt
+  			}; 
+  		})
+  		.entries(purchase);
+	console.log(JSON.stringify(ItemMetrics));
+
+	//To get count of vendors in a purchase (vendors) & total amount paid for a party (amt)
+	var item, total = 0
+	var label = [], item_count = [], paid_amt_count = []
+	for (item in ItemMetrics) {
+		label1 = d3.values(ItemMetrics[item])
+		label2 = label1[0]
+		if (label2 == "") { label2 = "Misc"}
+		label.push(label2)
+		value = label1[1]
+		items = value.count 
+		amt = value.total
+		item_count.push(items) 
+		paid_amt_count.push(amt)
+		total +=  items	
+	}
+
+	//funtion for generating children - By candidates
+	var nodeCount = 1;
+			function generateData(node, level) {
+				if (!level) level = 1;
+				var numChildren = item; 
+				node.children = [];
+				var amount = node.amount;
+				for (var i=0; i<numChildren; i++) {
+					nodeCount ++;
+					var child = { 
+						label: label[i], 
+						amount: item_count[i]
+					};
+					if (level == 1) child.color = vis4color.fromHSL(i/numChildren*360, .7, .5).x;
+					if (level == 2) child.color = vis4color.fromHex(node.color).lightness('*'+(.5+Math.random()*.5)).x;
+					amount -= child.amount;
+					node.children.push(child);
+					//if (level < 3) generateVotes(child, level+1);
+				}
+				return node;
+			}
+
+	//The data for by candidates visualization
+	var data = generateData({
+				label: 'All item count',
+				amount: total
+			});
+		
+			new BubbleTree({
+				data: data,
+				container: '.bubbletree'
+
+			});
+
+			
+		});
+
+};
+
+
+
+	</script>
+	</head>
+	<body>
+
+  			<!-- Header -->
+			<div id="header">
+				<button class="candi_button" type="button" autofocus onclick="renderData()">By Items</button>
+				<button class="vote_button" type="button" autofocus onclick="renderVotes()">By Paid Amt</button>
+				<div class="container"> 					<!-- Logo -->
+					<div id="logo">
+						<h1>Vendor Dashboard</h1>
+					</div>
+				</div>
+				<h2>Click on the button 'By items' or 'By paid amt' for visualization</h2>
+			</div>
+			<!-- /Header -->
+
+
+			<div id='root'></div>
+			<div class="bubbletree-wrapper">
+				<div class="bubbletree"></div>
+			</div>
+	</body>
+</html>

@@ -1,0 +1,75 @@
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Minimal BubbleTree Demo</title>
+	<script src="d3.min.js"></script>
+	<script type="text/javascript" src="lib/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/jquery.history.js"></script>
+	<script type="text/javascript" src="lib/raphael-min.js"></script>
+	<script type="text/javascript" src="lib/vis4.js"></script>
+	<script type="text/javascript" src="lib/Tween.js"></script>
+	<script type="text/javascript" src="bubbletree/build/bubbletree.js"></script>
+	<link rel="stylesheet" type="text/css" href="bubbletree/build/bubbletree.css" />	
+	<script type="text/javascript">
+ 	
+var svg = d3.select("body").append("svg")
+d3.tsv("http://localhost:8000/output.tsv", function(data) {
+  console.log(data[0]);
+
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													var PartyMetrics = d3.nest
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													()
+  .key(function(d) { return d.Party_Name; })
+  .rollup(function(v) { return {
+    count: v.length,
+    total: d3.sum(v, function(d) { return d.Total_Votes; })
+  }; })
+  .entries(data);
+console.log(JSON.stringify(PartyMetrics));
+
+var circles=svg.selectAll("circle").data(data)
+      
+      circles.enter()
+      	.append("circle")
+      	.attr({
+        cx: function(d,i){
+          return i=25
+        },
+        cy:200,
+        x:10
+      })
+      .on("click", function(d){
+        console.log("clicked",d)
+      })
+
+});
+/*var data1 = {
+	label: "I am a node",
+	amount: PartyCount.values,
+	children: [{
+		label: "I am the 1st child",
+		amount: 400000
+	}, {
+		label: "I am the 2nd child",
+		amount: 600000
+	}]
+
+}
+});
+
+
+		$(function() {
+			new BubbleTree({
+				data: data1,
+				container: '.bubbletree'
+			});
+		});*/
+
+console.log("you are now rocking with d3", d3);
+    console.log("you are now rocking with d3", d3);
+</script></head>
+<body>
+	<div class="bubbletree-wrapper">
+		<div class="bubbletree"></div>
+	</div>
+</body>
+</html>

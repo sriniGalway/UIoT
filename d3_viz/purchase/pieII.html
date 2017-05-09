@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+  text-align: center;
+}
+
+svg {
+  font: 10px sans-serif;
+}
+
+</style>
+<body>
+<script src="d3.min.js"></script>
+<script>
+
+// Define the margin, radius, and color scale. Colors are assigned lazily, so
+// if you want deterministic behavior, define a domain for the color scale.
+var m = 10,
+    r = 100,
+    z = d3.scale.category20c();
+
+// Define a pie layout: the pie angle encodes the Paid_Amt of item. Since our
+// data is stored in CSV, the Paid_Amt are strings which we coerce to numbers.
+var pie = d3.layout.pie()
+    .value(function(d) { return +d.Paid_Amt; })
+    .sort(function(a, b) { return b.Paid_Amt - a.Paid_Amt; });
+
+// Define an arc generator. Note the radius is specified here, not the layout.
+var arc = d3.svg.arc()
+    .innerRadius(r / 2)
+    .outerRadius(r);
+
+// Load the purchase data asynchronously.
+d3.csv("http://localhost:8000/q12014.csv", function(error, flights) {
+  if (error) throw error;
+
+  // Nest the purchase data by Vendor Name. Our data has the Paid_Amt per
+  // vendor Name & Description, but we want to group Paid_Amt by vendor Name.
+  var airports = d3.nest()
+      .key(function(d) { return d.Vendor_Name; })
+      .entries(flights);
+
+  // Insert an svg element (with margin) for each airport in our dataset. A
+  // child g element translates the origin to the pie center.
+  var svg = d3.select("body").selectAll("div")
+      .data(airports)
+    .enter().append("div") // http://code.google.com/p/chromium/issues/detail?id=98951
+      .style("display", "inline-block")
+      .style("width", (r + m) * 2 + "px")
+      .style("height", (r + m) * 2 + "px")
+    .append("svg")
+      .attr("width", (r + m) * 2)
+      .attr("height", (r + m) * 2)
+    .append("g")
+      .attr("transform", "translate(" + (r + m) + "," + (r + m) + ")");
+
+  // Add a label for the airport. The `key` comes from the nest operator.
+  svg.append("text")
+      .attr("dy", ".35em")
+      .attr("text-anchor", "middle")
+      .text(function(d) { return d.key; });
+
+  // Pass the nested per-airport values to the pie layout. The layout computes
+  // the angles for each arc. Another g element will hold the arc and its label.
+  var g = svg.selectAll("g")
+      .data(function(d) { return pie(d.values); })
+    .enter().append("g");
+
+  // Add a colored arc path, with a mouseover title showing the Paid_Amt.
+  g.append("path")
+      .attr("d", arc)
+      .style("fill", function(d) { return z(d.data.Item_Description); })
+    .append("title")
+      .text(function(d) { return d.data.Item_Description + ": " + d.data.Paid_Amt; });
+
+  // Add a label to the larger arcs, translated to the arc centroid and rotated.
+  g.filter(function(d) { return d.endAngle - d.startAngle > .2; }).append("text")
+      .attr("dy", ".35em")
+      .attr("text-anchor", "middle")
+      .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")rotate(" + angle(d) + ")"; })
+      .text(function(d) { return d.data.Item_Description; });
+
+  // Computes the label angle of an arc, converting from radians to degrees.
+  function angle(d) {
+    var a = (d.startAngle + d.endAngle) * 90 / Math.PI - 90;
+    return a > 90 ? a - 180 : a;
+  }
+});
+
+</script>

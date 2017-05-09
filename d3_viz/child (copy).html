@@ -1,0 +1,173 @@
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Election data</title>
+	<script src="d3.min.js"></script>
+	<script type="text/javascript" src="lib/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/jquery.history.js"></script>
+	<script type="text/javascript" src="lib/vis4.js"></script>
+	<script type="text/javascript" src="lib/Tween.js"></script>
+	<script type="text/javascript" src="lib/raphael-min.js"></script>
+	<script type="text/javascript" src="bubbletree/build/bubbletree.js"></script>
+	<link rel="stylesheet" type="text/css" href="bubbletree/build/bubbletree.css" />	
+	<script type="text/javascript">
+
+var root = d3.select('#root')
+
+function renderData() {
+d3.tsv("http://localhost:8000/output.tsv", function(party) {
+  console.log(party[0]);
+
+var PartyMetrics = d3.nest()
+  .key(function(d) { return d.Party_Name; })
+  .rollup(function(v) { return {
+    count: v.length,
+    total: d3.sum(v, function(d) { return d.Total_Votes; })
+  }; })
+  .entries(party);
+console.log(JSON.stringify(PartyMetrics));
+
+
+	var item, total = 0
+	var label = [], party_count = [], votes_count = []
+	for (item in PartyMetrics) {
+		label1 = d3.values(PartyMetrics[item])
+		label2 = label1[0]
+		if (label2 == "") { label2 = "Misc"}
+		label.push(label2)
+		value = label1[1]
+		amount = value.count 
+		votes = value.total
+		party_count.push(amount) 
+		votes_count.push(votes)
+		total +=  amount	
+	}
+
+	var nodeCount = 1;
+			function generateData(node, level) {
+				if (!level) level = 1;
+				var numChildren = 7; 
+				node.children = [];
+				var amount = node.amount;
+				for (var i=0; i<numChildren; i++) {
+					nodeCount ++;
+					var child = { 
+						label: label[i], 
+						amount: party_count[i]
+					};
+					if (level == 1) child.color = vis4color.fromHSL(i/numChildren*360, .7, .5).x;
+					if (level == 2) child.color = vis4color.fromHex(node.color).lightness('*'+(.5+Math.random()*.5)).x;
+					amount -= child.amount;
+					node.children.push(child);
+					//if (level < 3) generateVotes(child, level+1);
+				}
+				return node;
+			}
+
+var data = generateData({
+				label: 'All Party count',
+				amount: total
+			});
+		
+			new BubbleTree({
+				data: data,
+				container: '.bubbletree'
+
+			});
+
+			
+		});
+
+};
+
+function renderVotes() {
+d3.tsv("http://localhost:8000/output.tsv", function(party) {
+  console.log(party[0]);
+
+var PartyMetrics = d3.nest()
+  .key(function(d) { return d.Party_Name; })
+  .rollup(function(v) { return {
+    count: v.length,
+    total: d3.sum(v, function(d) { return d.Total_Votes; })
+  }; })
+  .entries(party);
+console.log(JSON.stringify(PartyMetrics));
+
+
+	var item, total = 0
+	var label = [], party_count = [], votes_count = []
+	for (item in PartyMetrics) {
+		label1 = d3.values(PartyMetrics[item])
+		label2 = label1[0]
+		if (label2 == "") { label2 = "Misc"}
+		label.push(label2)
+		value = label1[1]
+		amount = value.count 
+		votes = value.total
+		party_count.push(amount) 
+		votes_count.push(votes)
+		total +=  amount	
+	}
+
+	var nodeCount = 1;
+			function generateVotes(node, level) {
+				if (!level) level = 1;
+				var numChildren = 7; 
+				node.children = [];
+				var amount = node.amount;
+				for (var i=0; i<numChildren; i++) {
+					nodeCount ++;
+					var child = { 
+						label: label[i], 
+						amount: votes_count[i]
+					};
+					if (level == 1) child.color = vis4color.fromHSL(i/numChildren*360, .7, .5).x;
+					if (level == 2) child.color = vis4color.fromHex(node.color).lightness('*'+(.5+Math.random()*.5)).x;
+					amount -= child.amount;
+					node.children.push(child);
+					//if (level < 3) generateVotes(child, level+1);
+				}
+				return node;
+			}
+
+
+var data = generateVotes({
+				label: 'All Party count',
+				amount: total
+			});
+		
+			new BubbleTree({
+				data: data,
+				container: '.bubbletree'
+
+			});
+
+			
+		});
+
+};
+
+
+
+</script></head>
+<body>
+
+  			<!-- Header -->
+			<div id="header">
+				<button class="candi_button" type="button" autofocus onclick="renderData()">By Candidate</button>
+				<button class="vote_button" type="button" autofocus onclick="renderVotes()">By vote</button>
+				<div class="container"> 					<!-- Logo -->
+					<div id="logo">
+						<h1>Election Dashboard</h1>
+					</div>
+				</div>
+			</div>
+			<!-- /Header -->
+
+
+			<div id='root'></div>
+			<div class="bubbletree-wrapper">
+				<div class="bubbletree"></div>
+			</div>
+</body>
+</html>

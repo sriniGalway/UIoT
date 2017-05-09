@@ -1,0 +1,66 @@
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Election data</title>
+	<script src="d3.min.js"></script>
+	<script type="text/javascript" src="lib/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/jquery.history.js"></script>
+	<script type="text/javascript" src="lib/vis4.js"></script>
+	<script type="text/javascript" src="lib/Tween.js"></script>
+	<script type="text/javascript" src="lib/raphael-min.js"></script>
+	<script type="text/javascript" src="bubbletree/build/bubbletree.js"></script>
+	<link rel="stylesheet" type="text/css" href="bubbletree/build/bubbletree.css" />	
+
+	<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="http://getbootstrap.com/examples/justified-nav/justified-nav.css" rel="stylesheet">
+	
+	<svg id="visualisation" width="1000" height="500"></svg>
+
+	<script type="text/javascript">
+	//function for by Population visualization
+	$(function() {
+		d3.csv("http://localhost:8000/fccpopulationp20110701-2330.csv", function(population) {
+  	console.log(population[0]);
+  	var pop_orig = population;
+  	//traversing through each array of population data and amending the year column with year
+  	for (var index in population) {
+  		if (population.hasOwnProperty(index)) {
+    		console.log(index + " -> " + population[index]);
+  		}
+  		for (var key in population[index]){
+  			if (population[index].hasOwnProperty(key)) {
+    		console.log(key + " -> " + (population[index])[key]);
+  			}
+  			var FirstFive = key.substring(0, 6);
+  			
+  			if (FirstFive == "Census") {
+  			var LastFour=key.slice(-4);
+  			console.log(LastFour);
+  			//population[index].push(LastFour);
+  			Object.defineProperty(population[index], LastFour, Object.getOwnPropertyDescriptor(population[index], key));
+    		delete population[index][key];
+  			}
+  		}
+  	}
+ 			
+	});
+
+});
+	
+
+	</script>
+</head>
+	<body>
+  			<!-- Header -->
+			<div id="header">
+				
+				<div class="container"> 					<!-- Logo -->
+					<div id="logo">
+						<h1>Population Dashboard</h1>
+					</div>
+				</div>
+				
+			</div>
+			<!-- /Header -->
+	</body>
+</html>
